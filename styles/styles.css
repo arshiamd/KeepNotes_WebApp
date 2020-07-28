@@ -369,11 +369,9 @@ body {
         grid-template-rows: calc(100vh - 3em);
         grid-template-areas: "categories notes editor";
         display: grid;
-        grid-template-columns: 2fr 2fr ;
+        grid-template-columns: 1fr 1fr 1.5fr;
     }
-    #add-category-form .input-field{
-        width: 17%;
-    }
+    
     #add-category-form {
         width: -100px;
         display: flex;
