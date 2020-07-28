@@ -358,79 +358,6 @@ body {
 .alert-box__ok:hover {
     background-color: #d5d5d5;
 }
-/* 
-@media(max-width:600px){
-    #note-add-edit-form textarea {
-        flex-grow: 1;
-        min-width: 50%;
-        max-width: 50%;
-        font-size: 16px;
-        line-height: 24px;
-        font-family: 'Lato', sans-serif;
-    }
-}
-@media (max-width: 655px){
-    .toolbox {
-        height: 3em;
-        width: fit-content;
-        display: flex;
-        justify-content: space-between;
-        padding: .5rem 1rem;
-        border-bottom: 2px solid #d0d0d0;
-        background: #f5f5f5;
-    }
-    
-    #categories-list {
-        grid-area: categories;
-        overflow-y: auto;
-        border-right: 1px solid #e0e0e0;
-        width: 70%;
-    }
-    #notes-list {
-        position: relative;
-        left: -24%;
-        
-        border-right: 1px solid #e0e0e0;
-        width: 70%;
-    }
-    #note-add-edit-form textarea {
-        position: relative;
-        left: -66.7%;
-        flex-grow: 1;
-        min-width: 100%;
-        max-width: 100%;
-        font-size: 16px;
-        line-height: 24px;
-        font-family: 'Lato', sans-serif;
-    }
-    #note-add-edit-form input {
-        position: relative;
-        left: -66.7%;
-        border: none;
-        border-bottom: 1px solid #e0e0e0;
-        background-color: transparent;
-        
-        box-shadow: none;
-        outline: none;
-}
-     */
-
-/* @media (min-width:320px) and (max-width: 644px){
-    #note-app main {
-        position: relative;
-        flex-grow: 1;
-        display: grid;
-        grid-template-columns: 100px 150px 100%;
-        grid-template-rows: calc(100vh - 3em);
-        grid-template-areas: "categories notes editor";
-    }
-    #add-category-form .input-field {
-        max-width: 100px;
-    }
-    .searchbar{
-        width: 40%;
-    }
-} */
 
 @media (min-width:400px){
   
@@ -438,20 +365,23 @@ body {
         position: relative;
         flex-grow: 1;
         display: grid;
-        grid-template-columns: 100px 125px auto;
+        grid-template-columns: 50px 100px auto;
         grid-template-rows: calc(100vh - 3em);
         grid-template-areas: "categories notes editor";
         display: grid;
-        grid-template-columns: min-content auto;
+        grid-template-columns: 2fr 2fr ;
     }
-     
+    #add-category-form .input-field{
+        width: 17%;
+    }
     #add-category-form {
+        width: -100px;
         display: flex;
-        margin-right: 5px;
-        
+        margin-right: 2px;
     }
     .searchbar{
-        width: 23%;
+        width: 20%;
+        margin-left: -120px;
     }
     
 }
@@ -478,11 +408,11 @@ body {
         
     }
     .searchbar{
-        width: 23%;
-        margin-left: -30px;
+        width: 27%;
+        margin-left: -40px;
     }
 }
-@media (min-width:150px) and (max-width:320px){
+@media (min-width:150px) and (max-width:319px){
   
     #note-app main {
         position: relative;
