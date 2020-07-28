@@ -289,8 +289,8 @@ body {
 }
 
 #note-add-edit-form button {
-    background: #e0e0e0;
-    box-shadow: none;
+    background: rgb(180, 178, 178);
+    box-shadow: 10px 10px rgb(61, 65, 65);
     border: none;
     padding: 1em;
     border-radius: .3em;
@@ -298,7 +298,7 @@ body {
 }
 
 #note-add-edit-form button:hover {
-    background-color: #d5d5d5;
+    background-color: #ebe4e0;
 }
 
 
