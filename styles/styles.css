@@ -35,7 +35,7 @@ body {
 #note-app {
     position: absolute;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     background: #fbfbf9;
     background: linear-gradient(to top right, #39B59D, #139BDA, #196be6, #8085b9);
     display: flex;
@@ -49,7 +49,7 @@ body {
     flex-grow: 1;
     display: grid;
     grid-template-columns: 200px 250px auto;
-    grid-template-rows: calc(100vh - 3em);
+    /* grid-template-rows: calc(100vh - 3em); */
     grid-template-areas: "categories notes editor";
 }
 
