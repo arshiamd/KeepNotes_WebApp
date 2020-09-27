@@ -36,16 +36,20 @@
             return
         }
 
+
         var categoryNames = [];
         categoryNames = Object.values(_note_app.getCategoryNames());
-        for(var i=0;i<categoryNames.length;i++){
+        for(var i =0;i<categoryNames.length;i++){
             if(titleInput.value.toUpperCase() == categoryNames[i].data.title.toUpperCase()){
-                titleInput.value  = "";
-                alertBox.show({header: "Category Adding Error", message: "Category already exists.", buttonText: "OK!"});
+                titleInput.value = "";
+                alertBox.show({header: "Category Adding Error", message: "Category already Exists", buttonText: "OK!"});
                 titleInput.focus();
                 return
             }
         }
+
+
+        
         if (!_note_app.updatingCategoryID) {
             // unique id for each cat
             const id = new Date().getTime();
@@ -138,6 +142,9 @@
             _note_app.updateNote(noteObj);
         }
         filterNotesList();
+        handleNewNoteBtnClick();
+
+
     }
 
     function handleNoteItemClick(e) {
