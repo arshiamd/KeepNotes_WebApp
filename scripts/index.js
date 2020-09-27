@@ -41,7 +41,7 @@
         for(var i=0;i<categoryNames.length;i++){
             if(titleInput.value.toUpperCase() == categoryNames[i].data.title.toUpperCase()){
                 titleInput.value  = "";
-                alertBox.show({header:"Category Adding Error", message: "Category already exists.", buttonText: "OK!"});
+                alertBox.show({header: "Category Adding Error", message: "Category already exists.", buttonText: "OK!"});
                 titleInput.focus();
                 return
             }
