@@ -127,7 +127,7 @@
             // update existing category
             _note_app.updateNote(noteObj);
         }
-
+        filterNotesList();
     }
 
     function handleNoteItemClick(e) {
