@@ -209,4 +209,7 @@ class Note {
             }
         }
     }
+    getCategoryNames(){
+        return this.categories;
+    }
 }
